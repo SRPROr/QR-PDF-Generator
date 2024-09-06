@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de QR para PDFs</title>
+</head>
+<body>
+    <h1>Generador de QR para PDFs</h1>
+    <form id="uploadForm">
+        <label for="pdfFile">Subir PDF:</label>
+        <input type="file" id="pdfFile" accept="application/pdf" required>
+        <button type="submit">Generar QR</button>
+    </form>
+
+    <div id="qrCode"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
